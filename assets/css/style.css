@@ -1,0 +1,66 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+footer {
+    background-color:rgb(179, 216, 216);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+footer>ul  {
+    list-style-type: none;
+    padding: 0;
+}
+
+.background {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/coworking-portrait.jpg);
+}
+
+/* MODE PAYSAGE */
+
+@media (orientation: landscape) {
+    .background {
+        background-image: url(../img/coworking-paysage.jpg);
+    }
+}
+
+/* ECRAN LARGEUR SUPERIEUR A 1024 */
+
+@media (min-width: 1024px) {
+    .background {
+        height: 50%;
+    }
+
+    .container {
+        display: flex;
+    }
+ 
+    .block1 {
+       width: 50%;
+    }
+
+    .block2 {
+       width: 50%;
+
+    }
+ 
+}
+
+/* ECRAN LARGEUR A 576 */
+
+@media (min-width: 576px) {
+    footer>ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
